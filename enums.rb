@@ -13,10 +13,14 @@ lost_boys = [
 # 30 years.
 # Type your solution directly below this line:
 
+def initialize(name,age)
+   @name = name
+   @age = age
+ end
 
-
-
-
+ def thirty_years
+  @age = 30 + @age
+    end
 
 # Question 5
 # Assume the following array:
@@ -27,3 +31,10 @@ children = ['Wendy', 'John', 'Michael']
 # of their names. Assign the returned array to a variable called `darling_children`.
 # Example: `Wendy` should become `Wendy Darling` in the new array.
 # Type your solution directly below this line:
+
+children = ['Wendy', 'John', 'Michael']
+darling_children = children.map do |people|
+  add_lastname = children + "Darling"
+  puts add_lastname
+  add_lastname
+end
